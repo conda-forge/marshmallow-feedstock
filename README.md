@@ -14,6 +14,18 @@ converting complex datatypes, such as objects, to and from
 native Python datatypes.
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/marshmallow-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/marshmallow-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/marshmallow-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/marshmallow-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/marshmallow-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/marshmallow-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/marshmallow/badges/version.svg)](https://anaconda.org/conda-forge/marshmallow)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/marshmallow/badges/downloads.svg)](https://anaconda.org/conda-forge/marshmallow)
+
 Installing marshmallow
 ======================
 
@@ -34,7 +46,6 @@ It is possible to list all of the versions of `marshmallow` available on your pl
 ```
 conda search marshmallow --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -70,18 +81,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/marshmallow-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/marshmallow-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/marshmallow-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/marshmallow-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/marshmallow-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/marshmallow-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/marshmallow/badges/version.svg)](https://anaconda.org/conda-forge/marshmallow)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/marshmallow/badges/downloads.svg)](https://anaconda.org/conda-forge/marshmallow)
 
 
 Updating marshmallow-feedstock
