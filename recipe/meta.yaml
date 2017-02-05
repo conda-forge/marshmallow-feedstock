@@ -1,6 +1,6 @@
 {% set name = "marshmallow" %}
-{% set version = "2.10.4" %}
-{% set sha256 = "338d2d34bf6de771a05e67556093d4fe12f023a9a253bf180c11893f276dd7ee" %}
+{% set version = "2.12.2" %}
+{% set sha256 = "c4f7218683855cafb3f9907102d9dd702ba1002f56ac76ef2fac740b66fedf4c" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
