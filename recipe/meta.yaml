@@ -1,6 +1,6 @@
 {% set name = "marshmallow" %}
-{% set version = "2.13.5" %}
-{% set sha256 = "2f72131c0d01079b2f306d0ffe1e59b2ef42a3b247f8d87a283a2abb67fb1911" %}
+{% set version = "2.15.0" %}
+{% set sha256 = "d3f31fe7be2106b1d783cbd0765ef4e1c6615505514695f33082805f929dd584" %}
 
 package:
   name: {{ name|lower }}
@@ -12,6 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
+  noarch: python
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
@@ -44,3 +45,4 @@ extra:
     - hajapy
     - rth
     - frol
+    - igortg
