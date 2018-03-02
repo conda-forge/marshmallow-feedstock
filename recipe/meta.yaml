@@ -1,6 +1,6 @@
 {% set name = "marshmallow" %}
-{% set version = "2.15.0" %}
-{% set sha256 = "d3f31fe7be2106b1d783cbd0765ef4e1c6615505514695f33082805f929dd584" %}
+{% set version = "3.0.0b7" %}
+{% set sha256 = "dac05fc434aa21ba46e7a7d468c844c899e44f42380fba04dd896253fd7d7d52" %}
 
 package:
   name: {{ name|lower }}
