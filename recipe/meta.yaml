@@ -1,6 +1,6 @@
 {% set name = "marshmallow" %}
-{% set version = "3.0.0b19" %}
-{% set sha256 = "5e0053c86e3abaa72a03bbe0021ec97270c13fd6400b682eb1aeaf24b871bc8a" %}
+{% set version = "3.0.0rc1" %}
+{% set sha256 = "7adba78acbce1a812185ab8139d2c80223387d751f8c558d53eceb8aecf7cae5" %}
 
 package:
   name: {{ name|lower }}
@@ -14,12 +14,12 @@ source:
 build:
   noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
   run:
     - python
 
@@ -34,8 +34,8 @@ about:
   summary: 'A lightweight library for converting complex datatypes to and from native Python datatypes.'
 
   description: |
-    marshmallow is an ORM/ODM/framework-agnostic library for 
-    converting complex datatypes, such as objects, to and from 
+    marshmallow is an ORM/ODM/framework-agnostic library for
+    converting complex datatypes, such as objects, to and from
     native Python datatypes.
   doc_url: http://marshmallow.readthedocs.io/en/latest/
   dev_url: https://github.com/marshmallow-code/marshmallow/
