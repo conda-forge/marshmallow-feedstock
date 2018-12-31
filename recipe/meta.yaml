@@ -1,6 +1,6 @@
 {% set name = "marshmallow" %}
-{% set version = "3.0.0rc1" %}
-{% set sha256 = "7adba78acbce1a812185ab8139d2c80223387d751f8c558d53eceb8aecf7cae5" %}
+{% set version = "2.13.1" %}
+{% set sha256 = "cf7e35ddfe8b18f8de3058fffc621921c79bb07455ad3084bfbf64caca766711" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
 
 requirements:
