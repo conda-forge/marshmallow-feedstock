@@ -1,5 +1,5 @@
 {% set name = "marshmallow" %}
-{% set version = "2.19.5" %}
+{% set version = "2.20.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9cedfc5b6f568d57e8a2cf3d293fbd81b05e5ef557854008d03e25660a39ccfd
+  sha256: ee20892f41b2ac51f9f1927f30696a2fb91b99fe9e12bf54624e78654612cba7
 
 build:
   noarch: python
@@ -16,14 +16,23 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python 2.7|>=3.5
     - pip
   run:
-    - python >=3.5
+    - python 2.7|>=3.5
 
 test:
+  requires:
+    - pytest
+    - simplejson
+    - pytz
+    - python-dateutil
   imports:
     - marshmallow
+  source_files:
+      tests/*
+  commands:
+    - python -m pytest tests
 
 about:
   home: http://github.com/marshmallow-code/marshmallow
