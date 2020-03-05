@@ -1,5 +1,5 @@
 {% set name = "marshmallow" %}
-{% set version = "3.5.0" %}
+{% set version = "3.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3a94945a7461f2ab4df9576e51c97d66bee2c86155d3d3933fab752b31effab8
+  sha256: 90854221bbb1498d003a0c3cc9d8390259137551917961c8b5258c64026b2f85
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -29,7 +29,7 @@ about:
   home: http://github.com/marshmallow-code/marshmallow
   license: MIT
   license_file: LICENSE
-  summary: 'A lightweight library for converting complex datatypes to and from native Python datatypes.'
+  summary: A lightweight library for converting complex datatypes to and from native Python datatypes.
 
   description: |
     marshmallow is an ORM/ODM/framework-agnostic library for
