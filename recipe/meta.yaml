@@ -22,8 +22,17 @@ requirements:
     - python >=3.5
 
 test:
+  requires:
+    - pytest
+    - simplejson
+    - pytz
+    - python-dateutil
   imports:
     - marshmallow
+  source_files:
+      tests/*
+  commands:
+    - python -m pytest tests
 
 about:
   home: http://github.com/marshmallow-code/marshmallow
