@@ -1,5 +1,5 @@
 {% set name = "marshmallow" %}
-{% set version = "3.5.1" %}
+{% set version = "3.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 90854221bbb1498d003a0c3cc9d8390259137551917961c8b5258c64026b2f85
+  sha256: 56663fa1d5385c14c6a1236badd166d6dee987a5f64d2b6cc099dadf96eb4f09
 
 build:
   noarch: python
@@ -29,8 +29,7 @@ test:
     - python-dateutil
   imports:
     - marshmallow
-  source_files:
-      tests/*
+  source_files: tests/*
   commands:
     - python -m pytest tests
 
