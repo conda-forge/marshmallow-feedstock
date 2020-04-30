@@ -123,5 +123,6 @@ Feedstock Maintainers
 * [@frol](https://github.com/frol/)
 * [@hajapy](https://github.com/hajapy/)
 * [@igortg](https://github.com/igortg/)
+* [@mariusvniekerk](https://github.com/mariusvniekerk/)
 * [@rth](https://github.com/rth/)
 
