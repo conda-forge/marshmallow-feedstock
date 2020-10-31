@@ -5,9 +5,13 @@ Home: http://github.com/marshmallow-code/marshmallow
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/marshmallow-feedstock/blob/master/LICENSE.txt)
 
 Summary: A lightweight library for converting complex datatypes to and from native Python datatypes.
+
+Development: https://github.com/marshmallow-code/marshmallow/
+
+Documentation: http://marshmallow.readthedocs.io/en/latest/
 
 marshmallow is an ORM/ODM/framework-agnostic library for
 converting complex datatypes, such as objects, to and from
