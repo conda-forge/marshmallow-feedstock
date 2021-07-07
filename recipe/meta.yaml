@@ -1,5 +1,5 @@
 {% set name = "marshmallow" %}
-{% set version = "3.12.1" %}
+{% set version = "3.12.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8050475b70470cc58f4441ee92375db611792ba39ca1ad41d39cad193ea9e040
+  sha256: 77368dfedad93c3a041cbbdbce0b33fac1d8608c9e2e2288408a43ce3493d2ff
 
 build:
   noarch: python
