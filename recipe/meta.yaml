@@ -11,18 +11,20 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.7
     - pip
   run:
-    - python >=3.5
+    - python >=3.7
+    - packaging
 
 test:
   requires:
+    - pip
     - pytest
     - simplejson
     - pytz
@@ -32,6 +34,7 @@ test:
   source_files: tests/*
   commands:
     - python -m pytest tests
+    - pip check
 
 about:
   home: http://github.com/marshmallow-code/marshmallow
@@ -54,3 +57,4 @@ extra:
     - igortg
     - carlodri
     - mariusvniekerk
+    - xylar
