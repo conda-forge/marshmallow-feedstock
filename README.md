@@ -5,7 +5,7 @@ Home: http://github.com/marshmallow-code/marshmallow
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/marshmallow-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/marshmallow-feedstock/blob/main/LICENSE.txt)
 
 Summary: A lightweight library for converting complex datatypes to and from native Python datatypes.
 
@@ -24,8 +24,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5948&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/marshmallow-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5948&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/marshmallow-feedstock?branchName=main">
       </a>
     </td>
   </tr>
@@ -131,4 +131,5 @@ Feedstock Maintainers
 * [@igortg](https://github.com/igortg/)
 * [@mariusvniekerk](https://github.com/mariusvniekerk/)
 * [@rth](https://github.com/rth/)
+* [@xylar](https://github.com/xylar/)
 
