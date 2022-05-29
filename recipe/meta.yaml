@@ -1,5 +1,5 @@
 {% set name = "marshmallow" %}
-{% set version = "3.15.0" %}
+{% set version = "3.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2aaaab4f01ef4f5a011a21319af9fce17ab13bf28a026d1252adab0e035648d5
+  sha256: a762c1d8b2bcb0e5c8e964850d03f9f3bffd6a12b626f3c14b9d6b1841999af5
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - packaging
+    - packaging >=17.0
 
 test:
   requires:
