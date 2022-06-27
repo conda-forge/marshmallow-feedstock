@@ -31,7 +31,7 @@ test:
     - python-dateutil
   imports:
     - marshmallow
-  source_files: tests/*
+  source_files: tests/*.py
   commands:
     - python -m pytest tests
     - pip check
