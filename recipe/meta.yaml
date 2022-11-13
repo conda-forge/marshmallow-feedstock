@@ -38,7 +38,7 @@ test:
 
 about:
   home: http://github.com/marshmallow-code/marshmallow
-  license: MIT & BSD-3-Clause
+  license: MIT AND BSD-3-Clause
   license_file:
     - LICENSE
     - NOTICE
