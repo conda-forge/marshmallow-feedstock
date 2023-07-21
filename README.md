@@ -1,11 +1,11 @@
-About marshmallow
-=================
+About marshmallow-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/marshmallow-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/marshmallow-code/marshmallow
 
-Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/marshmallow-feedstock/blob/main/LICENSE.txt)
+Package license: MIT AND BSD-3-Clause
 
 Summary: A lightweight library for converting complex datatypes to and from native Python datatypes.
 
