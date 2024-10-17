@@ -1,5 +1,5 @@
 {% set name = "marshmallow" %}
-{% set version = "3.22.0" %}
+{% set version = "3.23.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,20 +7,20 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/marshmallow-{{ version }}.tar.gz
-  sha256: 4972f529104a220bb8637d595aa4c9762afbe7f7a77d82dc58c1615d70c5823e
+  sha256: 98d8827a9f10c03d44ead298d2e99c6aea8197df18ccfad360dae7f89a50da2e
 
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - flit-core <4
     - pip
   run:
-    - python >=3.8
+    - python >=3.9
     - packaging >=17.0
 
 test:
