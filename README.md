@@ -3,7 +3,7 @@ About marshmallow-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/marshmallow-feedstock/blob/main/LICENSE.txt)
 
-Home: http://github.com/marshmallow-code/marshmallow
+Home: https://github.com/marshmallow-code/marshmallow
 
 Package license: MIT AND BSD-3-Clause
 
@@ -11,7 +11,7 @@ Summary: A lightweight library for converting complex datatypes to and from nati
 
 Development: https://github.com/marshmallow-code/marshmallow/
 
-Documentation: http://marshmallow.readthedocs.io/en/latest/
+Documentation: https://marshmallow.readthedocs.io/en/latest/
 
 marshmallow is an ORM/ODM/framework-agnostic library for
 converting complex datatypes, such as objects, to and from
