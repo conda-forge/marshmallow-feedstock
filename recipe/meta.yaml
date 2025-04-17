@@ -1,5 +1,5 @@
 {% set name = "marshmallow" %}
-{% set version = "3.26.1" %}
+{% set version = "4.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/marshmallow-{{ version }}.tar.gz
-  sha256: e6d8affb6cb61d39d26402096dc0aee12d5a26d490a121f118d2e81dc0719dc6
+  sha256: 3b6e80aac299a7935cfb97ed01d1854fb90b5079430969af92118ea1b12a8d55
 
 build:
   noarch: python
@@ -21,7 +21,10 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - packaging >=17.0
+    # for py <3.11 but have it here for all py to stay noarch
+    - backports-datetime-fromisoformat
+    # for py <3.11 but have it here for all py to stay noarch
+    - typing_extensions
 
 test:
   requires:
