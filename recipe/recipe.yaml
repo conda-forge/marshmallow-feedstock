@@ -36,7 +36,9 @@ tests:
       pip_check: true
       python_version: ${{ python_min }}.*
   - files:
-      source: tests/*.py
+      source:
+        - pyproject.toml
+        - tests/*.py
     requirements:
       run:
         - pytest
