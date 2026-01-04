@@ -33,12 +33,12 @@ tests:
   - python:
       imports:
         - marshmallow
+      pip_check: true
       python_version: ${{ python_min }}.*
   - files:
       source: tests/*.py
     requirements:
       run:
-        - pip
         - pytest
         - simplejson
         - pytz
@@ -46,7 +46,6 @@ tests:
         - python ${{ python_min }}.*
     script:
       - python -m pytest tests
-      - pip check
 
 about:
   license: MIT AND BSD-3-Clause
