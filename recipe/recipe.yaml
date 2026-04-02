@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: marshmallow
-  version: "4.2.3"
+  version: "4.2.4"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/marshmallow-${{ version }}.tar.gz
-  sha256: 3e3fef6b3603721a25a723b8caedfa488369bddaf9bc03b40b9442c90aebd22b
+  sha256: 1ab9c798651b9048d127969d9423a0e47510e34100df1d3e24c9d5b6cdc26a86
 
 build:
   number: 0
