@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/marshmallow-{{ version }}.tar.gz
-  sha256: bbe2adb5a03e6e3571b573f42527c6fe926e17467833660bebd11593ab8dfd57 
+  sha256: bbe2adb5a03e6e3571b573f42527c6fe926e17467833660bebd11593ab8dfd57
 
 build:
   noarch: python
