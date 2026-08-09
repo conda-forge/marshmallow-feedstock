@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: marshmallow
-  version: "4.3.0"
+  version: "4.3.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/marshmallow-${{ version }}.tar.gz
-  sha256: fb43c53b3fe240b8f6af37223d6ef1636f927ad9bea8ab323afad95dff090880
+  sha256: fb6b8048af08d4ab061610d5b7d3696a7e4c95337dbda880edb9f95812cabc20
 
 build:
   number: 0
@@ -34,7 +34,9 @@ tests:
       imports:
         - marshmallow
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - files:
       source:
         - pyproject.toml
